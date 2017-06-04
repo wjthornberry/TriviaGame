@@ -18,6 +18,9 @@
 
     // 60-89%>: "You're Steve Holt!" Not the brightest, but what charisma!
 
-    // 0-59%: "You're GOB, Lucille's least favorite child."
+    // 40-60%: "You're J. Walter Weatherman: And *that's* why you alwyas watch *Arrested Development* with
+    //a little more attention to detail"
+
+    // 0-40%: "You're GOB, Lucille's least favorite child."
 
   
