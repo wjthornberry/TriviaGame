@@ -23,4 +23,15 @@
 
     // 0-40%: "You're GOB, Lucille's least favorite child."
 
+// Parallax effect for header - if time
+// var jumboHeight = $('.jumbotron').outerHeight();
+// function parallax(){
+//     var scrolled = $(window).scrollTop();
+//     $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+// }
+
+// $(window).scroll(function(e){
+//     parallax();
+// });
+
   
