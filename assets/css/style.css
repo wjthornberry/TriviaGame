@@ -20,7 +20,7 @@ body {
 
 .jumbotron {
     text-align: right;
-    background-color: #F06D1F;
+    background-color: #F57921;
 }
 
 .btn {
@@ -38,6 +38,10 @@ body {
             border-radius: 8px;
 }
 
+.start-img { 
+    width: 50%;
+
+}
 
 
     /*Cannot add image to jumbotron
