@@ -40,8 +40,26 @@ body {
 
 .start-img { 
     width: 50%;
-
 }
+
+.content {
+    /*margin-top: 150px;*/
+    background-color: #a9a8a8;
+    /*min-height: 5500px;*/
+
+.sidebar-outer {
+    /*margin-top: 150px;*/
+    position: relative;
+}
+
+.fixed {
+    position: sticky;
+}
+
+/*.timer1 {
+    position: sticky;
+    z-index: 1;
+}*/
 
 
     /*Cannot add image to jumbotron
