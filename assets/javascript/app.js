@@ -3,7 +3,27 @@ $(document).ready(function() {
     // Play again button
     $("#playAgain").hide();
 
+    var answers = ["C", "C", "A", "D", "B", "A", "B", "D", "C", "B", "C", "C", "A", "B", "B", "C", "A", 
+    "D", "B", "C", "D", "B", "A", "B", "B", "D", "C", "C", "C", "B", "D", "B", "A", "C", "C", "A", "D", 
+    "C", "B", "A", "B", "B", "C", "D", "A", "B", "D", "C", "A", "C"], 
+        tot = answers.length;
 
+    function getCheckedValue( radioName ){
+        var radios = document.getElementsByName( radioName ); // Get radio group by-name
+        for(var y=0; y<radios.length; y++)
+        if(radios[y].checked) return radios[y].value; // return the checked value
+    }
+
+    function getScore(){
+    var score = 0;
+    for (var i=0; i<tot; i++)
+        if(getCheckedValue("question"+i)===answers[i]) score += 1; // increment only
+    return score;
+    }
+
+    function returnScore(){
+    alert("Your score is "+ getScore() +"/"+ tot);
+    }
 
 }
 // Start button
