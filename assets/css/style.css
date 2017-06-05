@@ -30,7 +30,8 @@ body {
 .btn-xlarge {
     padding: 18px 28px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-size: 22px;
     line-height: normal;
     -webkit-border-radius: 8px;
@@ -43,7 +44,20 @@ body {
 }
 
 .content {
-    border:solid;
+    /*border:solid;*/
+}
+
+ol {
+    /*border:solid green;*/
+}
+
+li {
+    /*border:solid orange;*/
+    margin: 10px;
+}
+
+.radio-inline {
+    margin: 10px;
 }
    
 .gameOver {
@@ -53,6 +67,12 @@ body {
 	padding:20px;
 	margin-top: 20px;
     box-shadow:0px 1px 1px rgba(0,0,0,1);
+}
+
+.footer, a {
+     background-color: #F57921;
+     color: white;
+     padding: 10px;
 }
 
 /*.timer1 {
