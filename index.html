@@ -24,25 +24,30 @@
 
 <!--Game Container-->
 <div class="container main">
-  
-  <!--GIF 
-<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">-->
 
+    <!--play again button; hide until game done; hide again-->
+    <button class="btn btn-default btn-xlarge center-block" id="playAgain">Play Again</button> 
+
+    <!--Arrested Development image displays until game starts-->
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <img class="start-img center-block" src="./assets/images/arr-dev-start.jpg" alt="Arrested Development Cast">
-            <!--Hide after click-->
-            <button class="btn btn-default btn-xlarge center-block" id="startBtn">Play</button> 
-            <!--play again button; hide until game done; hide again-->
-            <button class="btn btn-default btn-xlarge center-block" id="playAgain">Play Again</button> 
         </div>
     </div>
+
+    <!--Gentlemen, start your engines-->
+    <button class="btn btn-default btn-xlarge center-block" id="gameStart">Play</button> 
     
+    <!--Main content-->
     <div class="row">   
-        <div class="col-xs-9 content center-block">
-            <div class="panel panel-primary">
-                <div class="panel-heading"></div>
-                <div class="panel-body">
+        <div class="col-xs-8 col-xs-8-offset-4">
+        <!--Game's timer-->'
+        <!--Make position: fixed to follow user's scroll-->
+            <div class="gameTimer">
+             <h4 class="time-remaining text-center">Time Left: <span id="timeLeft"></span></h4>
+            </div>
+
+            <div class="content">
                     <ol>
                         <li><!--Q1-->
                             <h5>Who’s the uncredited narrator?</h5>
@@ -53,7 +58,7 @@
                                 <input type="radio" name="question0" value="B">Rob Schneider
                             </label>
                             <label class="radio-inline" id="correct">
-                                <input type="radio" name="question0" value="C">Ron Howard C
+                                <input type="radio" name="question0" value="C">Ron Howard
                             </label>
                             <label class="radio-inline">
                                 <input type="radio" name="question0" value"D">Ronnie James Dio
@@ -878,28 +883,22 @@
                             </label>
                         </li>
                     </ol>
-                </div><!--panel body-->
-            </div><!--panel panel-primary-->
-      </div><!--content-->
+                    <button onclick="returnScore()">View Results</button>
+            </div><!--content-->
+        </div><!--column xs-8-->
+    </div><!--row--> 
+    
+    <!--Image shows when time runs out, user wins/loses"-->
+    <img class='img responsive center-block' id="gameImg" src="">
 
-        <div class="col-xs-2 sidebar-outer">
-            <div class="game timer">
-                <h4>Time Left:</h4>
-            </div>
-        </div>
-    </div><!--row-->
-
+    <!--Box shows when time runs out/quiz is completed-->
     <div class="row">
-        <div class="center-block col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3">
-            <div class="gameover">
-                <div class="panel panel-primary"
-                    <div class="panel-body">
-                        <h3 class="results"><b>Result</b></h3>
-                        <h4 class="correct">Correct answers: <span class="correct" id="correct"></span></h4>
-                        <h4 class="incorrect">Incorrect answers: <span class="incorrect" id="incorrect"></span></h4>
-                        <h4 class="unanswered">Unanswered questions: <span class="unanswered" id="unanswered"></span><h4>
-                    </div>
-                </div>
+        <div class="col-xs-12">
+            <div class="gameOver">
+                <h3 class="results"><b>Result</b></h3>
+                <h4 class="correct">Correct answers: <span class="correct" id="correct"></span></h4>
+                <h4 class="incorrect">Incorrect answers: <span class="incorrect" id="incorrect"></span></h4>
+                <h4 class="unanswered">Unanswered questions: <span class="unanswered" id="unanswered"></span><h4>
             </div>
         </div>
     </div>
@@ -916,7 +915,7 @@
 
     <!--And now I'd like to welcome js and jQuery to the party -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 </html>
