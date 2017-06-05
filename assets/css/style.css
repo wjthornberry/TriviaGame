@@ -23,10 +23,14 @@ body {
     background-color: #F06D1F;
 }
 
+.btn {
+    background: #dadada;
+}
+
 .btn-xlarge {
     padding: 18px 28px;
     position: relative;
-    /*margin-top: 100px;*/
+    margin-top: 50px;
     font-size: 22px;
     line-height: normal;
     -webkit-border-radius: 8px;
@@ -52,7 +56,7 @@ body {
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;*/
-}
+/*}*/
 
 /*h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
