@@ -43,17 +43,29 @@ body {
 }
 
 .content {
-    /*margin-top: 150px;*/
-    background-color: #a9a8a8;
+    border: solid;
+    /*border: solid;*/
     /*min-height: 5500px;*/
 
 .sidebar-outer {
-    /*margin-top: 150px;*/
-    position: relative;
+    position: fixed;
+    border: solid;
+}
+
+.timer {
+    border:solid;
 }
 
 .fixed {
-    position: sticky;
+    border: solid;
+    /*position: fixed;*/
+}
+
+/*Cannot change main content div's blue color to orange*/
+.panel-heading {
+    border: solid;
+    color:#F57921;
+
 }
 
 /*.timer1 {
