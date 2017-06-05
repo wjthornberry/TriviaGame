@@ -1,3 +1,22 @@
+$(document).ready(function() {
+   
+    // Play again button
+    $("#playAgain").hide();
+
+    // Sets user's default score at start of game to zero
+    parseInt($('#correct').html(0));
+    parseInt($('#incorrect').html(0));
+    parseInt($('#unanswered').html(0));
+
+    var score = parseInt($('#userScore').html());
+
+    var correctAnswers = 0;
+    var incorrectAnswers = 0;
+    var unansweredQuestions = 0;
+
+
+
+}
 // Start button
 
 // When start button is clicked, timer starts countind down from 2:00 minutes
@@ -34,4 +53,4 @@
 //     parallax();
 // });
 
-  
+

@@ -43,16 +43,16 @@ body {
 }
 
 .content {
-    border: solid;
-    /*border: solid;*/
-    /*min-height: 5500px;*/
+   
 
 .sidebar-outer {
+    borer-radius: 10px;
     position: fixed;
     border: solid;
 }
 
 .timer {
+    border-radius: 10px;
     border:solid;
 }
 
@@ -66,6 +66,15 @@ body {
     border: solid;
     color:#F57921;
 
+}
+
+.gameover {
+    border: solid blue;
+    border-radius: 10px;
+	background: #dadada;
+	padding:8px;
+	margin-top: 20px;
+    box-shadow:0px 1px 1px rgba(0,0,0,1);
 }
 
 /*.timer1 {
