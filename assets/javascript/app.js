@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var numberCorrect = 0; // starting number of correct answers
 	var numberIncorrect = 0;
 	var missed = 0;
-	var start = 250;  // Set variable for timer start
+	var start = 2;  // Set variable for timer start
     var answers = ["C", "C", "A", "D", "B", "A", "B", "D", "C", "B", "C", "C", "A", "B", "B", "C", "A", 
     "D", "B", "C", "D", "B", "A", "B", "B", "D", "C", "C", "C", "B", "D", "B", "A", "C", "C", "A", "D", 
     "C", "B", "A", "B", "B", "C", "D", "A", "B", "D", "C", "A", "C"], 
@@ -26,7 +26,7 @@ $(document).ready(function() {
         $('.gameTimer').css('display', 'block');
 
 		//Starts the game's timer
-		// var controls the startTimer function 
+		//var controls the startTimer function 
 		timer = setInterval(startTimer, 1000);
 		$('#gameStart').hide();
 	}
@@ -35,15 +35,16 @@ $(document).ready(function() {
 	    function startTimer() {
             start -= 1;
             $('#timeLeft').html(start);
-            if (start < 25) {
+            if (start < 1) {
                 clearInterval(timer);
                 $('.content').hide();
-                $('.gameover').display();
+                $('.gameOver').css('display', 'block');
+                $('.gameTimer').hide();
                 $('.lose').show();
                 $('.lose').html('Oh, no—you ran out of time! Would you like to play again?');
                 $('#gameImg').attr('src', questions[curQuestion].imgSrc);
-		}
-	}
+		    }
+	    }
 
     function getCheckedValue( radioName ){
         var radios = document.getElementsByName( radioName ); // Get radio group by-name
