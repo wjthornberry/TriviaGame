@@ -27,7 +27,7 @@ $(document).ready(function() {
         $('.pickAnswer').click(function() {
             $(this).data('clicked', true);
         });
-        var i = 10;
+        var i = 15;
         var myInterval = setInterval(function() {
 
             if (i < 10) {
@@ -175,7 +175,7 @@ $(document).ready(function() {
         },
              // question 20
         {
-            "q": "What prompted Lucille to adopt Annyong?",
+            "q": "What prompted Lucille to adopt Anyong?",
             "c": ['Buster was getting old enough to leave home', 'Buster had alienated the Motherboy judges', 'Buster wouldn\'t finish his cottage cheese', 'She was desperate for someone strong enough to keep GOB away from her'],
             "answer": 2
         },
