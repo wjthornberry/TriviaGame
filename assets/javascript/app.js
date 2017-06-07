@@ -432,10 +432,10 @@ $(document).ready(function() {
         // Depending on user's score, a different image and text is displayed
         if(correctCounter>=40){
             $('#gameMessage').append('<img id="imgFinal" src="./assets/images/michael.jpg"/>');
-            $('#gameMessage').append("<h5>Wow, nice work! Such a high score means you're Michael, the smartest of the Bluths</h4>");
+            $('#gameMessage').append("<h5>Wow, nice work! Such a high score means you're Michael, the smartest of the Bluths.</h4>");
         } else if (correctCounter>=30){
             $('#gameMessage').append('<img id="imgFinal" src="./assets/images/george-michael.jpg"/>');
-            $('#gameMessage').append("<h5>Not bad! That score means you're George Michael, one of the goofier Bluths</h4>");
+            $('#gameMessage').append("<h5>Not bad! That score means you're George Michael, one of the goofier Bluths.</h4>");
         } else if (correctCounter>=20){
             $('#gameMessage').append('<img id="imgFinal" src="./assets/images/steve-holt.png"/>');
             $('#gameMessage').append("<h5>Hm, you could probably do better, huh? You're Steve Holt (STEVE HOLT!) — not the smartest tool in the toolshed, but my, what charisma!</h4>");
