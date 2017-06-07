@@ -441,7 +441,7 @@ $(document).ready(function() {
             $('#gameMessage').append("<h5>Hm, you could probably do better, huh? You're Steve Holt (STEVE HOLT!) — not the smartest tool in the toolshed, but my, what charisma!</h4>");
         } else {
             $('#gameMessage').append('<img id="imgFinal" src="./assets/images/gob.jpg"/>');
-            $('#gameMessage').append("<h5>That's a really low score. You're GOB, Lucille's least favorite.</h4>");
+            $('#gameMessage').append("<h5>That's a really low score. You're GOB, Lucille's least favorite child.</h4>");
         }
         
          setTimeout(startTrivia, 1000 * 15);
