@@ -2,8 +2,23 @@
 	box-sizing: border-box;
 }
 
+/* Page */
 body {
     position: relative;
+    font-family: 'Roboto', sans-serif;
+    /* Footer rules */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.container {
+    /*height: 500px;*/
+    padding-bottom: 50px;
 }
 
 .header {
@@ -23,228 +38,77 @@ body {
     background-color: #F57921;
 }
 
-.btn {
-    background: #dadada;
-}
-
-.btn-xlarge {
-    padding: 18px 28px;
-    position: relative;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 22px;
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
-}
-
-.start-img { 
-    width: 35%;
-}
-
-.content {
-    /*border:solid;*/
-}
-
-ol {
-    /*border:solid green;*/
-}
-
-li {
-    /*border:solid orange;*/
-    margin: 10px;
-}
-
-.radio-inline {
-    margin: 10px;
-}
-   
-.gameOver {
-    /*border-radius: 10px;*/
-	/*background: #dadada;*/
-	padding: 10px;
-	margin: 10px;
+.start-img {
+    border-radius: 10px;
+    width: 35%
 }
 
 .footer, a {
      background-color: #F57921;
      color: white;
-     /*padding-top: 10px;*/
+     padding-top: 10px;
+     margin-top: 0:
 }
 
-.col-centered {
-    float: none;
-    margin: 0 auto;
-}
-
-/*.timer1 {
-    position: sticky;
-    z-index: 1;
-}*/
-
-
-    /*Cannot add image to jumbotron
-    background-image: url("../assets/images/arr-dev-lose.jpg");
-    background-size: cover;
-    margin-bottom: 0px;
-    min-height: 50%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;*/
-
-    /*background-image: url("images/arrested-dev-game-jumbotron.jp");
-    background-color: #17234E;
-    margin-bottom: 0;`enter code here`
-    min-height: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;*/
-/*}*/
-
-/*h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-}
-p, {
-    font-family: 'Roboto', sans-serif;
-}*/
-
-/*.header {
-	font-family: 'Roboto', cursive;
-	font-weight: 100;
-}
-
-.jumbotron {
-	background: #bcF2ff;
-}
-
+/* Buttons */
 .btn {
-    background: #dadada;
-}*/
-
-/* To change the color of the jumbotron to green (win) or red (lose)
-Couldn't get it to work.
-
-/*.jumbo-win {
-    background: #33ffc4;
-}
-
-.jumbo-lose {    
-    background: #ff6a6a;
-}
-*/
-
-/* Pop-up for rules – outer */
-/*.popup {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-	background: #bcF2ff;
-}
-
-/* Pop-up for rules – inner */
-/*.popup-inner {
-    position: absolute;
-    width: 90%;
-    max-width: 700px;
-    top: 50%;
-    left: 50%;
-    padding: 30px;
-    box-shadow: 0px 2px 2px rgba(0,0,0,1);
     border-radius: 5px;
-    transform: translate(-50%, -50%);
-    background: white;*/
-/*}*/
- 
-/* Pop-up close button */
-/*.popup-close {
-    display: inline-block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 0px;
-    right: 0px;
-    transform: translate(50%, -50%);
-    border-radius: 650px;
-    background: rgba(0,0,0,0.9);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #CCC2C7;
+    border: #fff 4px solid;
+    background-color: transparent;
+}
+
+.btn:hover {
+    color: #F57921;
+}
+
+/*Questions*/
+#questionSpace {
+    color: solid;
+    margin-top: 40px;
+    padding: 5px;
+    width: 1000px;
+    height: 500px;
+}
+
+#question {
     font-size: 20px;
-    text-align: center;
-    line-height: 100%;
-    color: #fff;
-    padding-top: 4px;
-}*/
-
-/*.popup-close:hover {
-    transform:translate(50%, -50%) rotate(180deg);
-    background:rgba(0,0,0,1);
-    text-decoration:none;*/
-/*}*/
-/*
-
-
-.target .wins .losses {
-	width: 10px;
-    background: #dadada;
-}*/
-
-/*.record-score {
-	border-radius: 10px;
-	width: 100px;
-	padding: 5px;
-	margin-top: 1px;
-    margin-left: 115px;
-    box-shadow: 0px 1px 1px rgba(0,0,0,1);
-    background: #dadada;
 }
 
-.game {
-	border-radius: 10px;
-	background: #dadada;
-	width:250px;
-	padding:8px;
-	margin-top: 1px;
-    box-shadow:0px 1px 1px rgba(0,0,0,1);
+/*Timer*/
+#timer {
+    color: #e74c3c;
+    font-size: 40px;
 }
 
-.row-crystals {
-	margin-left:90px;
+/* Answers */
+#choices {
+    font-size: 23px;
 }
 
-.crystals {
-	margin-bottom:200px;
-	margin-top:5px;
-	padding:10px;
+.pickAnswer {
+    border: solid 5px #fff;
 }
 
-.btn-start {
-	margin-top: 10px;
-	border-radius: 5px;
-	padding: 5px;
+.pickAnswer, .pickAnswer:hover {
+    display: block;
+    margin: 20px 0;
+    padding: 5px;
+    border-radius: 6px;
 }
 
-.img:hover {
-	cursor: pointer;
-	opacity: 0.7;
+.pickAnswer:hover {
+    border: solid 5px #F57921;
+    cursor: pointer;
 }
 
-.img {
-	margin-top: 20px;
-	margin-bottom: 20px;
+#buttonRow {
+    margin-top: 130px;
 }
 
-#gameInit {
-	border-radius: 5px;
-	padding: 10px;
-	width: 100px;
-	margin-top: 50px;
-    background: #bcF2ff;
+#imgFinal {
+    max-width: 100%;
+    height: auto;
 }
-
-.footer {
-	margin-top: 50px;
-}*/
