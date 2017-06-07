@@ -43,6 +43,10 @@ main {
     height: auto;
 }
 
+/*#imageRow {
+    max-width: 100%;
+}*/
+
 .footer, a {
      background-color: #F57921;
      color: white;
