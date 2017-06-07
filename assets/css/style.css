@@ -41,11 +41,12 @@ main {
 .start-img {
     max-width: 100%;
     height: auto;
+    /*border: solid;*/
 }
 
-/*#imageRow {
-    max-width: 100%;
-}*/
+#imageRow {
+    /*border: solid blue;*/
+}
 
 .footer, a {
      background-color: #F57921;
